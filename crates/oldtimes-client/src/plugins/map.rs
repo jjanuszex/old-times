@@ -1,9 +1,5 @@
 use bevy::prelude::*;
-use oldtimes_core::{
-    assets::SpriteMetadataResource,
-    components::TileType,
-    resources::MapData,
-};
+use oldtimes_core::{assets::SpriteMetadataResource, components::TileType, resources::MapData};
 
 /// Plugin for map generation, rendering, and coordinate systems.
 pub struct MapPlugin;
@@ -28,7 +24,9 @@ fn spawn_map_system(
     asset_server: Res<AssetServer>,
 ) {
     if map_data.width == 0 || map_data.height == 0 {
-        log::error!("MapData is empty, cannot spawn map. Make sure it's initialized before this system.");
+        log::error!(
+            "MapData is empty, cannot spawn map. Make sure it's initialized before this system."
+        );
         return;
     }
 
@@ -59,7 +57,10 @@ fn spawn_map_system(
             }
         }
     }
-    log::info!("Finished spawning {} map tiles.", map_data.width * map_data.height);
+    log::info!(
+        "Finished spawning {} map tiles.",
+        map_data.width * map_data.height
+    );
 }
 
 /// A module for handling isometric coordinate conversions.

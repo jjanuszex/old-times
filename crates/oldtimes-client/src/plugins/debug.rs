@@ -38,10 +38,7 @@ struct DebugText;
 struct TileHighlighter;
 
 /// Toggles debug features on/off with F1 and F2 keys.
-fn debug_toggle_system(
-    mut debug_overlay: ResMut<DebugOverlay>,
-    input: Res<ButtonInput<KeyCode>>,
-) {
+fn debug_toggle_system(mut debug_overlay: ResMut<DebugOverlay>, input: Res<ButtonInput<KeyCode>>) {
     if input.just_pressed(KeyCode::F1) {
         debug_overlay.show_info = !debug_overlay.show_info;
     }
@@ -93,7 +90,8 @@ fn update_debug_overlay_system(
         }
 
         let mut entity_count = 0;
-        if let Some(entity_diagnostic) = diagnostics.get(&EntityCountDiagnosticsPlugin::ENTITY_COUNT)
+        if let Some(entity_diagnostic) =
+            diagnostics.get(&EntityCountDiagnosticsPlugin::ENTITY_COUNT)
         {
             if let Some(entity_count_value) = entity_diagnostic.value() {
                 entity_count = entity_count_value as u32;

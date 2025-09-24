@@ -100,11 +100,14 @@ fn update_cursor_world_pos_system(
     q_window: Query<&Window, With<PrimaryWindow>>,
     q_camera: Query<(&Camera, &GlobalTransform), With<MainCamera>>,
 ) {
-    if let (Ok((camera, camera_transform)), Ok(window)) = (q_camera.get_single(), q_window.get_single()) {
+    if let (Ok((camera, camera_transform)), Ok(window)) =
+        (q_camera.get_single(), q_window.get_single())
+    {
         // Check if the cursor is inside the window and get its screen position.
         if let Some(screen_pos) = window.cursor_position() {
             // Use the camera to convert the screen position to a world position.
-            if let Some(world_position) = camera.viewport_to_world_2d(camera_transform, screen_pos) {
+            if let Some(world_position) = camera.viewport_to_world_2d(camera_transform, screen_pos)
+            {
                 cursor_pos.0 = world_position;
             }
         }

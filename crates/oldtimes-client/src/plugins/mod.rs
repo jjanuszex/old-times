@@ -1,13 +1,13 @@
-pub mod camera;
-pub mod map;
 pub mod build_mode;
-pub mod economy;
-pub mod ui;
+pub mod camera;
 pub mod debug;
+pub mod economy;
+pub mod map;
+pub mod ui;
 
-pub use camera::CameraPlugin;
-pub use map::MapPlugin;
 pub use build_mode::BuildModePlugin;
-pub use economy::EconomyPlugin;
-pub use ui::UiPlugin;
+pub use camera::CameraPlugin;
 pub use debug::DebugPlugin;
+pub use economy::EconomyPlugin;
+pub use map::MapPlugin;
+pub use ui::UiPlugin;

@@ -1,8 +1,5 @@
 use bevy::prelude::*;
-use oldtimes_core::{
-    components::Stockpile,
-    resources::GameTick,
-};
+use oldtimes_core::{components::Stockpile, resources::GameTick};
 use std::collections::HashMap;
 
 /// Plugin for managing client-side economy state and game speed.
@@ -57,7 +54,14 @@ fn game_speed_control_system(
 ) {
     if keyboard.just_pressed(KeyCode::Space) {
         game_speed.paused = !game_speed.paused;
-        log::info!("Game {}", if game_speed.paused { "paused" } else { "resumed" });
+        log::info!(
+            "Game {}",
+            if game_speed.paused {
+                "paused"
+            } else {
+                "resumed"
+            }
+        );
     }
 
     if keyboard.just_pressed(KeyCode::Digit1) {

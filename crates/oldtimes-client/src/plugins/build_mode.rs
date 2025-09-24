@@ -6,10 +6,7 @@ use oldtimes_core::{
     resources::{GameConfig, MapData},
 };
 
-use super::{
-    camera::CursorWorldPos,
-    map::map_coords,
-};
+use super::{camera::CursorWorldPos, map::map_coords};
 
 /// Plugin to handle all building-related player interactions.
 pub struct BuildModePlugin;
@@ -20,7 +17,8 @@ impl Plugin for BuildModePlugin {
 
         app.add_systems(
             Update,
-            (handle_building_selection, place_building_on_click).in_set(crate::GameSystemSet::Input),
+            (handle_building_selection, place_building_on_click)
+                .in_set(crate::GameSystemSet::Input),
         );
         app.add_systems(Update, ghost_manager.in_set(crate::GameSystemSet::Client));
         app.add_systems(
@@ -41,10 +39,7 @@ pub struct BuildingPlacer {
 struct Ghost;
 
 /// Handles keyboard input for selecting which building to place.
-fn handle_building_selection(
-    mut placer: ResMut<BuildingPlacer>,
-    input: Res<ButtonInput<KeyCode>>,
-) {
+fn handle_building_selection(mut placer: ResMut<BuildingPlacer>, input: Res<ButtonInput<KeyCode>>) {
     if input.just_pressed(KeyCode::KeyQ) {
         placer.kind = Some("lumberjack".to_string());
     } else if input.just_pressed(KeyCode::KeyE) {
@@ -85,20 +80,32 @@ fn ghost_manager(
     let building_kind = placer.kind.as_ref().unwrap();
 
     // Get building footprint from config.
-    let footprint = game_config.buildings.get(building_kind)
+    let footprint = game_config
+        .buildings
+        .get(building_kind)
         .map_or((1, 1), |b| (b.size.0, b.size.1));
 
     let grid_pos = map_coords::world_to_grid(cursor_pos.x, cursor_pos.y);
     let world_pos = map_coords::grid_to_world(grid_pos.x, grid_pos.y);
 
     // Check for placement validity.
-    let is_valid = check_placement_validity(&map_data, grid_pos, footprint, &building_query, &game_config);
+    let is_valid = check_placement_validity(
+        &map_data,
+        grid_pos,
+        footprint,
+        &building_query,
+        &game_config,
+    );
 
     // If a ghost exists, update it. Otherwise, spawn one.
     if let Ok((_, mut transform, mut sprite)) = ghost_query.get_single_mut() {
         transform.translation.x = world_pos.x;
         transform.translation.y = world_pos.y;
-        sprite.color = if is_valid { Color::srgba(0.0, 1.0, 0.0, 0.5) } else { Color::srgba(1.0, 0.0, 0.0, 0.5) };
+        sprite.color = if is_valid {
+            Color::srgba(0.0, 1.0, 0.0, 0.5)
+        } else {
+            Color::srgba(1.0, 0.0, 0.0, 0.5)
+        };
     } else {
         if let Some(building_meta) = metadata.get_building(building_kind) {
             if let Some(path) = &building_meta.source {
@@ -132,12 +139,24 @@ fn place_building_on_click(
     if mouse.just_pressed(MouseButton::Left) {
         if let Some(kind) = &placer.kind {
             let grid_pos = map_coords::world_to_grid(cursor_pos.x, cursor_pos.y);
-            let footprint = game_config.buildings.get(kind).map_or((1, 1), |b| (b.size.0, b.size.1));
+            let footprint = game_config
+                .buildings
+                .get(kind)
+                .map_or((1, 1), |b| (b.size.0, b.size.1));
 
-            if check_placement_validity(&map_data, grid_pos, footprint, &building_query, &game_config) {
+            if check_placement_validity(
+                &map_data,
+                grid_pos,
+                footprint,
+                &building_query,
+                &game_config,
+            ) {
                 event_writer.send(PlaceBuildingEvent {
                     building_type: kind.clone(),
-                    position: Position { x: grid_pos.x, y: grid_pos.y },
+                    position: Position {
+                        x: grid_pos.x,
+                        y: grid_pos.y,
+                    },
                 });
                 log::info!("Sent PlaceBuildingEvent for {} at {:?}", kind, grid_pos);
             }
@@ -161,7 +180,11 @@ fn render_placed_buildings(
                     transform: Transform::from_xyz(pos.x, pos.y, 1.0),
                     ..default()
                 });
-                 log::info!("Rendered building sprite for {} at {:?}", building.building_type, pos);
+                log::info!(
+                    "Rendered building sprite for {} at {:?}",
+                    building.building_type,
+                    pos
+                );
             }
         }
     }
@@ -183,9 +206,13 @@ fn check_placement_validity(
                 return false; // Out of bounds
             }
             if let Some(tile) = map_data.get_tile(check_pos.x, check_pos.y) {
-                 if !matches!(tile.tile_type, oldtimes_core::components::TileType::Grass | oldtimes_core::components::TileType::Road) {
+                if !matches!(
+                    tile.tile_type,
+                    oldtimes_core::components::TileType::Grass
+                        | oldtimes_core::components::TileType::Road
+                ) {
                     return false; // Can only build on grass or road
-                 }
+                }
             }
         }
     }
@@ -197,17 +224,22 @@ fn check_placement_validity(
     );
 
     for (p, b) in building_query.iter() {
-        let b_footprint = game_config.buildings.get(&b.building_type).map_or((1,1), |bc| (bc.size.0, bc.size.1));
+        let b_footprint = game_config
+            .buildings
+            .get(&b.building_type)
+            .map_or((1, 1), |bc| (bc.size.0, bc.size.1));
         let existing_building_rect = Rect::from_corners(
             IVec2::new(p.x, p.y).as_vec2(),
-            (IVec2::new(p.x, p.y) + IVec2::new(b_footprint.0 as i32, b_footprint.1 as i32)).as_vec2(),
+            (IVec2::new(p.x, p.y) + IVec2::new(b_footprint.0 as i32, b_footprint.1 as i32))
+                .as_vec2(),
         );
 
         // Simple AABB collision check
-        if new_building_rect.min.x < existing_building_rect.max.x &&
-           new_building_rect.max.x > existing_building_rect.min.x &&
-           new_building_rect.min.y < existing_building_rect.max.y &&
-           new_building_rect.max.y > existing_building_rect.min.y {
+        if new_building_rect.min.x < existing_building_rect.max.x
+            && new_building_rect.max.x > existing_building_rect.min.x
+            && new_building_rect.min.y < existing_building_rect.max.y
+            && new_building_rect.max.y > existing_building_rect.min.y
+        {
             return false; // Collision detected
         }
     }
