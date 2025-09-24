@@ -1,8 +1,8 @@
-use bevy::prelude::*;
 use crate::{
-    components::{Position, Stockpile, Worker, WorkerTask, TaskPurpose},
-    events::{TransferResourceEvent, PathfindingRequestEvent, PathfindingPriority},
+    components::{Position, Stockpile, TaskPurpose, Worker, WorkerTask},
+    events::{PathfindingPriority, PathfindingRequestEvent, TransferResourceEvent},
 };
+use bevy::prelude::*;
 
 /// System that handles resource transport between stockpiles
 pub fn transport_system(
@@ -14,14 +14,15 @@ pub fn transport_system(
 ) {
     for event in events.read() {
         // Find available worker for transport
-        let available_worker = workers.iter_mut()
-            .find(|(_, worker, _)| matches!(worker.current_task, WorkerTask::Idle) && worker.carrying.is_none());
-        
+        let available_worker = workers.iter_mut().find(|(_, worker, _)| {
+            matches!(worker.current_task, WorkerTask::Idle) && worker.carrying.is_none()
+        });
+
         if let Some((worker_entity, mut worker, worker_pos)) = available_worker {
             // Get source and destination positions
             let source_pos = positions.get(event.from).ok();
             let dest_pos = positions.get(event.to).ok();
-            
+
             if let (Some(source_pos), Some(dest_pos)) = (source_pos, dest_pos) {
                 // Check if source has the resource
                 if let Ok(source_stockpile) = stockpiles.get(event.from) {
@@ -34,7 +35,7 @@ pub fn transport_system(
                                 amount: event.amount,
                             },
                         };
-                        
+
                         // Request pathfinding to source
                         pathfinding_events.send(PathfindingRequestEvent {
                             entity: worker_entity,
@@ -42,9 +43,14 @@ pub fn transport_system(
                             to: *source_pos,
                             priority: PathfindingPriority::Normal,
                         });
-                        
-                        log::debug!("Assigned transport task: {} {} from {:?} to {:?}", 
-                                   event.amount, event.resource, event.from, event.to);
+
+                        log::debug!(
+                            "Assigned transport task: {} {} from {:?} to {:?}",
+                            event.amount,
+                            event.resource,
+                            event.from,
+                            event.to
+                        );
                     }
                 }
             }
@@ -64,24 +70,26 @@ pub fn resource_distribution_system(
     if tick.current % (tick.target_tps as u64 * 5) != 0 {
         return;
     }
-    
+
     let stockpiles_vec: Vec<_> = stockpiles.iter().collect();
-    
+
     // Simple distribution: move excess resources to stockpiles that need them
     for (source_entity, source_stockpile, _source_pos) in &stockpiles_vec {
         for (item, &amount) in &source_stockpile.items {
-            if amount > 10 { // If we have excess (more than 10)
+            if amount > 10 {
+                // If we have excess (more than 10)
                 // Find a stockpile that needs this resource
                 for (dest_entity, dest_stockpile, _dest_pos) in &stockpiles_vec {
                     if source_entity == dest_entity {
                         continue;
                     }
-                    
+
                     let dest_amount = dest_stockpile.get_item_count(item);
                     if dest_amount < 5 && dest_stockpile.available_space() > 0 {
                         // Transfer some resources
-                        let transfer_amount = (amount - 10).min(5).min(dest_stockpile.available_space());
-                        
+                        let transfer_amount =
+                            (amount - 10).min(5).min(dest_stockpile.available_space());
+
                         if transfer_amount > 0 {
                             transfer_events.send(TransferResourceEvent {
                                 from: *source_entity,
@@ -89,9 +97,14 @@ pub fn resource_distribution_system(
                                 resource: item.clone(),
                                 amount: transfer_amount,
                             });
-                            
-                            log::debug!("Auto-distributing {} {} from {:?} to {:?}", 
-                                       transfer_amount, item, source_entity, dest_entity);
+
+                            log::debug!(
+                                "Auto-distributing {} {} from {:?} to {:?}",
+                                transfer_amount,
+                                item,
+                                source_entity,
+                                dest_entity
+                            );
                             break; // Only one transfer per item per tick
                         }
                     }
@@ -122,7 +135,7 @@ pub fn transport_completion_system(
                             break;
                         }
                     }
-                    
+
                     if let Some(dest_entity) = dest_entity {
                         if let Ok(dest_pos) = positions.get(dest_entity) {
                             if let Ok(worker_pos) = positions.get(event.worker) {
@@ -132,7 +145,7 @@ pub fn transport_completion_system(
                                     item: item.clone(),
                                     amount: *amount,
                                 };
-                                
+
                                 pathfinding_events.send(PathfindingRequestEvent {
                                     entity: event.worker,
                                     from: *worker_pos,
@@ -158,18 +171,18 @@ pub fn transport_completion_system(
 #[cfg(test)]
 mod tests {
     use super::*;
-    
+
     #[test]
     fn test_resource_distribution_logic() {
         // Test that excess resources are identified correctly
         let mut stockpile = Stockpile::new(100);
         stockpile.add_item("wood".to_string(), 15);
-        
+
         assert!(stockpile.get_item_count("wood") > 10);
-        
+
         let mut dest_stockpile = Stockpile::new(100);
         dest_stockpile.add_item("wood".to_string(), 3);
-        
+
         assert!(dest_stockpile.get_item_count("wood") < 5);
         assert!(dest_stockpile.available_space() > 0);
     }

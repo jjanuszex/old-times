@@ -1,5 +1,5 @@
 use bevy::prelude::*;
-use oldtimes_core::{components::*, resources::*, assets::*};
+use oldtimes_core::{assets::*, components::*, resources::*};
 
 #[derive(Resource)]
 pub struct GameAssets {
@@ -10,14 +10,14 @@ pub struct GameAssets {
     pub mill: Handle<Image>,
     pub bakery: Handle<Image>,
     pub quarry: Handle<Image>,
-    
+
     // Terrain textures
     pub grass: Handle<Image>,
     pub water: Handle<Image>,
     pub stone: Handle<Image>,
     pub forest: Handle<Image>,
     pub road: Handle<Image>,
-    
+
     // Unit textures
     pub worker: Handle<Image>,
 }
@@ -25,7 +25,7 @@ pub struct GameAssets {
 const TILE_SIZE: f32 = 32.0;
 
 pub fn load_game_assets(
-    mut commands: Commands, 
+    mut commands: Commands,
     asset_server: Res<AssetServer>,
     sprite_metadata: Option<Res<SpriteMetadataResource>>,
 ) {
@@ -35,7 +35,7 @@ pub fn load_game_assets(
     } else {
         load_assets_fallback(&asset_server)
     };
-    
+
     commands.insert_resource(assets);
     log::info!("Game assets loaded");
 }
@@ -45,31 +45,97 @@ fn load_assets_from_metadata(
     metadata: &SpriteMetadataResource,
 ) -> GameAssets {
     log::info!("Loading assets using sprite metadata");
-    
+
     GameAssets {
         // Building textures - use metadata or fallback
-        lumberjack: load_sprite_with_fallback(asset_server, metadata, "building", "lumberjack", "sprites/lumberjack.png"),
-        sawmill: load_sprite_with_fallback(asset_server, metadata, "building", "sawmill", "sprites/sawmill.png"),
-        farm: load_sprite_with_fallback(asset_server, metadata, "building", "farm", "sprites/farm.png"),
-        mill: load_sprite_with_fallback(asset_server, metadata, "building", "mill", "sprites/mill.png"),
-        bakery: load_sprite_with_fallback(asset_server, metadata, "building", "bakery", "sprites/bakery.png"),
-        quarry: load_sprite_with_fallback(asset_server, metadata, "building", "quarry", "sprites/quarry.png"),
-        
+        lumberjack: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "building",
+            "lumberjack",
+            "sprites/lumberjack.png",
+        ),
+        sawmill: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "building",
+            "sawmill",
+            "sprites/sawmill.png",
+        ),
+        farm: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "building",
+            "farm",
+            "sprites/farm.png",
+        ),
+        mill: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "building",
+            "mill",
+            "sprites/mill.png",
+        ),
+        bakery: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "building",
+            "bakery",
+            "sprites/bakery.png",
+        ),
+        quarry: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "building",
+            "quarry",
+            "sprites/quarry.png",
+        ),
+
         // Terrain textures - use metadata or fallback
-        grass: load_sprite_with_fallback(asset_server, metadata, "tile", "grass", "sprites/grass.png"),
-        water: load_sprite_with_fallback(asset_server, metadata, "tile", "water", "sprites/water.png"),
-        stone: load_sprite_with_fallback(asset_server, metadata, "tile", "stone", "sprites/stone.png"),
-        forest: load_sprite_with_fallback(asset_server, metadata, "tile", "forest", "sprites/forest.png"),
+        grass: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "tile",
+            "grass",
+            "sprites/grass.png",
+        ),
+        water: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "tile",
+            "water",
+            "sprites/water.png",
+        ),
+        stone: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "tile",
+            "stone",
+            "sprites/stone.png",
+        ),
+        forest: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "tile",
+            "forest",
+            "sprites/forest.png",
+        ),
         road: load_sprite_with_fallback(asset_server, metadata, "tile", "road", "sprites/road.png"),
-        
+
         // Unit textures - use metadata or fallback
-        worker: load_sprite_with_fallback(asset_server, metadata, "unit", "worker", "sprites/worker.png"),
+        worker: load_sprite_with_fallback(
+            asset_server,
+            metadata,
+            "unit",
+            "worker",
+            "sprites/worker.png",
+        ),
     }
 }
 
 fn load_assets_fallback(asset_server: &AssetServer) -> GameAssets {
     log::info!("Loading assets using fallback hardcoded paths");
-    
+
     GameAssets {
         // Building textures
         lumberjack: asset_server.load("sprites/lumberjack.png"),
@@ -78,14 +144,14 @@ fn load_assets_fallback(asset_server: &AssetServer) -> GameAssets {
         mill: asset_server.load("sprites/mill.png"),
         bakery: asset_server.load("sprites/bakery.png"),
         quarry: asset_server.load("sprites/quarry.png"),
-        
+
         // Terrain textures
         grass: asset_server.load("sprites/grass.png"),
         water: asset_server.load("sprites/water.png"),
         stone: asset_server.load("sprites/stone.png"),
         forest: asset_server.load("sprites/forest.png"),
         road: asset_server.load("sprites/road.png"),
-        
+
         // Unit textures
         worker: asset_server.load("sprites/worker.png"),
     }
@@ -102,7 +168,12 @@ fn load_sprite_with_fallback(
         log::debug!("Loading {} {} from metadata: {}", sprite_type, name, path);
         asset_server.load(path)
     } else {
-        log::debug!("Using fallback path for {} {}: {}", sprite_type, name, fallback_path);
+        log::debug!(
+            "Using fallback path for {} {}: {}",
+            sprite_type,
+            name,
+            fallback_path
+        );
         asset_server.load(fallback_path.to_string())
     }
 }
@@ -114,20 +185,22 @@ pub fn render_map_system(
     assets: Option<Res<GameAssets>>,
 ) {
     // Wait for assets to load
-    let Some(assets) = assets else { return; };
-    
+    let Some(assets) = assets else {
+        return;
+    };
+
     // Clear existing tile renderers if map changed
     if map.is_changed() {
         for entity in existing_tiles.iter() {
             commands.entity(entity).despawn();
         }
-        
+
         // Render new map
         for y in 0..map.height {
             for x in 0..map.width {
                 if let Some(tile) = map.get_tile(x as i32, y as i32) {
                     let texture = get_tile_texture(&assets, &tile.tile_type);
-                    
+
                     commands.spawn((
                         SpriteBundle {
                             texture: texture.clone(),
@@ -148,18 +221,23 @@ pub fn render_map_system(
 
 pub fn render_buildings_system(
     mut commands: Commands,
-    buildings: Query<(Entity, &Position, &Building), (Changed<Building>, Without<BuildingRenderer>)>,
+    buildings: Query<
+        (Entity, &Position, &Building),
+        (Changed<Building>, Without<BuildingRenderer>),
+    >,
     existing_renderers: Query<Entity, With<BuildingRenderer>>,
     assets: Option<Res<GameAssets>>,
 ) {
     // Wait for assets to load
-    let Some(assets) = assets else { return; };
-    
+    let Some(assets) = assets else {
+        return;
+    };
+
     // Spawn renderers for new buildings
     for (entity, position, building) in buildings.iter() {
         let texture = get_building_texture(&assets, &building.building_type);
         let alpha = if building.is_constructed { 1.0 } else { 0.5 };
-        
+
         commands.spawn((
             SpriteBundle {
                 texture: texture.clone(),
@@ -174,10 +252,12 @@ pub fn render_buildings_system(
                 ),
                 ..default()
             },
-            BuildingRenderer { building_entity: entity },
+            BuildingRenderer {
+                building_entity: entity,
+            },
         ));
     }
-    
+
     // Update existing building renderers
     let _renderer_query = existing_renderers.iter().collect::<Vec<_>>();
     // In a full implementation, update building appearance based on state
@@ -190,8 +270,10 @@ pub fn render_workers_system(
     assets: Option<Res<GameAssets>>,
 ) {
     // Wait for assets to load
-    let Some(assets) = assets else { return; };
-    
+    let Some(assets) = assets else {
+        return;
+    };
+
     // Spawn renderers for new workers
     for (entity, position, _worker) in workers.iter() {
         commands.spawn((
@@ -204,10 +286,12 @@ pub fn render_workers_system(
                 ),
                 ..default()
             },
-            WorkerRenderer { worker_entity: entity },
+            WorkerRenderer {
+                worker_entity: entity,
+            },
         ));
     }
-    
+
     // Update positions of existing worker renderers
     for (mut transform, renderer) in existing_renderers.iter_mut() {
         if let Ok((_, position, _)) = workers.get(renderer.worker_entity) {

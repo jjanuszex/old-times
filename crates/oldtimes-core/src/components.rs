@@ -13,7 +13,7 @@ impl Position {
     pub fn new(x: i32, y: i32) -> Self {
         Self { x, y }
     }
-    
+
     pub fn distance_to(&self, other: &Position) -> f32 {
         let dx = (self.x - other.x) as f32;
         let dy = (self.y - other.y) as f32;
@@ -51,26 +51,26 @@ impl Stockpile {
             items: std::collections::HashMap::new(),
         }
     }
-    
+
     pub fn total_items(&self) -> u32 {
         self.items.values().sum()
     }
-    
+
     pub fn available_space(&self) -> u32 {
         self.capacity.saturating_sub(self.total_items())
     }
-    
+
     pub fn can_store(&self, item: &str, amount: u32) -> bool {
         self.available_space() >= amount
     }
-    
+
     pub fn add_item(&mut self, item: String, amount: u32) -> u32 {
         let available = self.available_space();
         let to_add = amount.min(available);
         *self.items.entry(item).or_insert(0) += to_add;
         to_add
     }
-    
+
     pub fn remove_item(&mut self, item: &str, amount: u32) -> u32 {
         let current = self.items.get(item).copied().unwrap_or(0);
         let to_remove = amount.min(current);
@@ -84,7 +84,7 @@ impl Stockpile {
         }
         to_remove
     }
-    
+
     pub fn get_item_count(&self, item: &str) -> u32 {
         self.items.get(item).copied().unwrap_or(0)
     }
@@ -146,9 +146,20 @@ pub struct Worker {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum WorkerTask {
     Idle,
-    MovingTo { target: Position, purpose: TaskPurpose },
-    Working { building: Entity, progress: f32 },
-    Carrying { from: Position, to: Position, item: String, amount: u32 },
+    MovingTo {
+        target: Position,
+        purpose: TaskPurpose,
+    },
+    Working {
+        building: Entity,
+        progress: f32,
+    },
+    Carrying {
+        from: Position,
+        to: Position,
+        item: String,
+        amount: u32,
+    },
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -188,11 +199,11 @@ impl Pathfinding {
             recalculate: false,
         }
     }
-    
+
     pub fn current_target(&self) -> Option<Position> {
         self.path.get(self.current_target_index).copied()
     }
-    
+
     pub fn advance_target(&mut self) -> bool {
         if self.current_target_index + 1 < self.path.len() {
             self.current_target_index += 1;
@@ -201,7 +212,7 @@ impl Pathfinding {
             false
         }
     }
-    
+
     pub fn is_complete(&self) -> bool {
         self.current_target_index >= self.path.len()
     }
@@ -233,7 +244,7 @@ impl Tile {
             TileType::Road => 0.5,
         }
     }
-    
+
     pub fn is_passable(&self) -> bool {
         !matches!(self.tile_type, TileType::Water)
     }

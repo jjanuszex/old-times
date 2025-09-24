@@ -1,5 +1,5 @@
-use bevy::prelude::*;
 use crate::resources::{GameTick, PerformanceMetrics};
+use bevy::prelude::*;
 
 /// System that advances the game tick
 pub fn advance_tick_system(
@@ -8,16 +8,20 @@ pub fn advance_tick_system(
     query: Query<Entity>,
 ) {
     let start_time = std::time::Instant::now();
-    
+
     tick.tick();
     metrics.entities_count = query.iter().count() as u32;
-    
+
     let elapsed = start_time.elapsed().as_secs_f32() * 1000.0;
     metrics.tick_time = elapsed;
-    
+
     if tick.current % 100 == 0 {
-        log::debug!("Tick: {}, Entities: {}, Time: {:.2}ms", 
-                   tick.current, metrics.entities_count, elapsed);
+        log::debug!(
+            "Tick: {}, Entities: {}, Time: {:.2}ms",
+            tick.current,
+            metrics.entities_count,
+            elapsed
+        );
     }
 }
 
@@ -39,8 +43,10 @@ macro_rules! profile_system {
             let start = std::time::Instant::now();
             $system(world);
             let duration = start.elapsed().as_secs_f32() * 1000.0;
-            
-            if let Some(mut events) = world.get_resource_mut::<Events<crate::events::ProfileEvent>>() {
+
+            if let Some(mut events) =
+                world.get_resource_mut::<Events<crate::events::ProfileEvent>>()
+            {
                 events.send(crate::events::ProfileEvent {
                     system_name: $name.to_string(),
                     duration_ms: duration,

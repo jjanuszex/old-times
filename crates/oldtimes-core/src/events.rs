@@ -1,6 +1,6 @@
+use crate::components::Position;
 use bevy::prelude::*;
 use serde::{Deserialize, Serialize};
-use crate::components::Position;
 
 /// Event for placing a new building
 #[derive(Event, Debug, Clone, Serialize, Deserialize)]

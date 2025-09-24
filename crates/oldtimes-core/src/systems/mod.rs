@@ -1,13 +1,13 @@
-pub mod tick;
+pub mod construction;
 pub mod pathfinding;
 pub mod production;
-pub mod construction;
-pub mod worker;
+pub mod tick;
 pub mod transport;
+pub mod worker;
 
-pub use tick::*;
+pub use construction::*;
 pub use pathfinding::*;
 pub use production::*;
-pub use construction::*;
-pub use worker::*;
+pub use tick::*;
 pub use transport::*;
+pub use worker::*;
