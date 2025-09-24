@@ -1,7 +1,15 @@
 // Old Times - Core simulation engine
 // MIT License
 
-#![allow(unused_variables, unused_imports, unused_mut, clippy::new_without_default, clippy::for_kv_map, clippy::crate_in_macro_def, clippy::cast_abs_to_unsigned)]
+#![allow(
+    unused_variables,
+    unused_imports,
+    unused_mut,
+    clippy::new_without_default,
+    clippy::for_kv_map,
+    clippy::crate_in_macro_def,
+    clippy::cast_abs_to_unsigned
+)]
 
 pub mod assets;
 pub mod components;
