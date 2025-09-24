@@ -85,8 +85,8 @@ class TestCLIIntegration:
         assert "DRY RUN:" in result.stdout
         assert "Would create symlink" in result.stdout
     
-    @patch('scripts.asset_pipeline.utils.symlink.create_asset_symlink')
-    @patch('scripts.asset_pipeline.utils.symlink.validate_asset_symlink')
+    @patch('scripts.asset_pipeline.cli.create_asset_symlink')
+    @patch('scripts.asset_pipeline.cli.validate_asset_symlink')
     def test_link_command_success(self, mock_validate, mock_create):
         """Test successful link command execution."""
         mock_create.return_value = True
@@ -98,7 +98,7 @@ class TestCLIIntegration:
         mock_create.assert_called_once_with(force=True)
         mock_validate.assert_called_once()
     
-    @patch('scripts.asset_pipeline.utils.symlink.create_asset_symlink')
+    @patch('scripts.asset_pipeline.cli.create_asset_symlink')
     def test_link_command_failure(self, mock_create):
         """Test link command failure handling."""
         from scripts.asset_pipeline.utils.symlink import SymlinkError
