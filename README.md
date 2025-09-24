@@ -25,7 +25,7 @@ A 2D isometric RTS/city-building game inspired by Knights & Merchants, built wit
 ### Building
 
 ```bash
-git clone https://github.com/yourusername/old-times
+git clone https://github.com/jjanuszex/old-times.git
 cd old-times
 
 # Set up asset pipeline (optional)
@@ -55,7 +55,7 @@ cargo run -p oldtimes-headless -- benchmark --scenario standard
 
 ### Camera
 - **WASD** or **Arrow Keys**: Move camera
-- **Mouse Wheel**: Zoom (planned)
+- **Mouse Wheel**: Zoom in/out
 
 ### Building Placement
 - **Q**: Select Lumberjack
@@ -74,9 +74,9 @@ cargo run -p oldtimes-headless -- benchmark --scenario standard
 - **4**: Very fast speed (4x)
 
 ### Debug
-- **F1**: Toggle debug overlay
-- **F2**: Toggle pathfinding visualization
-- **F3**: Toggle performance metrics
+- **F1**: Toggle debug overlay (FPS, entity count, cursor position)
+- **F2**: Toggle tile highlighter under cursor
+- **F3**: Toggle performance metrics (planned)
 
 ## Architecture
 
@@ -84,7 +84,13 @@ cargo run -p oldtimes-headless -- benchmark --scenario standard
 
 - **oldtimes-core**: Headless simulation engine (ECS, economy, pathfinding)
 - **oldtimes-headless**: CLI server for testing and benchmarks
-- **oldtimes-client**: Game client with rendering and UI
+- **oldtimes-client**: Game client with rendering and UI. It is built on a modular, plugin-based architecture:
+  - `MapPlugin`: Renders the isometric map.
+  - `CameraPlugin`: Handles camera controls and coordinate projection.
+  - `BuildModePlugin`: Manages building placement logic and UI feedback.
+  - `UiPlugin`: Renders the HUD for resources.
+  - `EconomyPlugin`: Manages client-side economic state and game speed.
+  - `DebugPlugin`: Provides debug overlays and tools.
 
 ### Key Systems
 
@@ -223,6 +229,8 @@ old-times/
 │   ├── oldtimes-core/      # Core simulation engine
 │   ├── oldtimes-headless/  # Headless binary
 │   └── oldtimes-client/    # Game client
+│       └── src/
+│           └── plugins/    # Client-side plugins
 ├── assets/
 │   └── data/              # Game data files
 ├── mods/

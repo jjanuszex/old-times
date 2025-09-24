@@ -372,6 +372,8 @@ layout = "single_sprite"
         fs::write(&atlas_path, atlas_content).unwrap();
 
         // Create test sprites.toml with atlas reference
+        // Use forward slashes for cross-platform compatibility in TOML
+        let atlas_path_str = atlas_path.to_str().unwrap().replace('\\', "/");
         let toml_content = format!(
             r#"
 [tiles]
@@ -388,7 +390,7 @@ anim_walk_len = 8
 layout = "dirs_rows"
 atlas_map = "{}"
 "#,
-            atlas_path.to_str().unwrap()
+            atlas_path_str
         );
 
         fs::write(&sprites_path, toml_content).unwrap();

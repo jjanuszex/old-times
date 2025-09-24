@@ -145,8 +145,9 @@ jobs:
     - name: Generate coverage
       run: cargo llvm-cov --all-features --workspace --lcov --output-path lcov.info
     
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+    # Upload as artifact to avoid rate limiting issues with Codecov
+    - name: Upload coverage artifacts
+      uses: actions/upload-artifact@v3
       with:
-        files: lcov.info
-        fail_ci_if_error: true
+        name: coverage-report
+        path: lcov.info
