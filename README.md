@@ -25,7 +25,7 @@ A 2D isometric RTS/city-building game inspired by Knights & Merchants, built wit
 ### Building
 
 ```bash
-git clone https://github.com/yourusername/old-times
+git clone https://github.com/jjanuszex/old-times.git
 cd old-times
 
 # Set up asset pipeline (optional)

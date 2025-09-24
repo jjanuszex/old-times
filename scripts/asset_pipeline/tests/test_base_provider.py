@@ -70,7 +70,7 @@ class TestAssetSpec(unittest.TestCase):
             AssetSpec(
                 name="test",
                 asset_type="tile",
-                size=(0, 32)
+                size=(-1, 32)
             )
         
         with self.assertRaises(ValueError):

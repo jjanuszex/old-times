@@ -372,7 +372,7 @@ layout = "single_sprite"
         fs::write(&atlas_path, atlas_content).unwrap();
 
         // Create test sprites.toml with atlas reference
-        // Normalize the path to use forward slashes for cross-platform compatibility in the TOML string.
+        // Use forward slashes for cross-platform compatibility in TOML
         let atlas_path_str = atlas_path.to_str().unwrap().replace('\\', "/");
         let toml_content = format!(
             r#"

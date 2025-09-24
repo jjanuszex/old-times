@@ -111,7 +111,7 @@ impl SimulationApp {
     }
 
     /// Get a mutable resource from the simulation
-    pub fn get_resource_mut<T: Resource>(&mut self) -> Option<Mut<T>> {
+    pub fn get_resource_mut<T: Resource>(&mut self) -> Option<Mut<'_, T>> {
         self.app.world_mut().get_resource_mut::<T>()
     }
 
