@@ -141,9 +141,7 @@ fn tile_highlighter_system(
                 TileHighlighter,
             ));
         }
-    } else {
-        if let Ok((_entity, _, mut visibility)) = highlighter_query.get_single_mut() {
-            *visibility = Visibility::Hidden;
-        }
+    } else if let Ok((_entity, _, mut visibility)) = highlighter_query.get_single_mut() {
+        *visibility = Visibility::Hidden;
     }
 }

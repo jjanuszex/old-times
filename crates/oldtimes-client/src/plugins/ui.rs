@@ -89,6 +89,7 @@ fn setup_ui(mut commands: Commands) {
 }
 
 // A more efficient way to write the update system
+#[allow(clippy::type_complexity)]
 fn update_resource_display_combined(
     resources: Res<GlobalResources>,
     mut queries: ParamSet<(

@@ -58,6 +58,7 @@ fn handle_building_selection(mut placer: ResMut<BuildingPlacer>, input: Res<Butt
 }
 
 /// Manages the ghost building preview.
+#[allow(clippy::too_many_arguments)]
 fn ghost_manager(
     mut commands: Commands,
     placer: Res<BuildingPlacer>,
@@ -106,22 +107,20 @@ fn ghost_manager(
         } else {
             Color::srgba(1.0, 0.0, 0.0, 0.5)
         };
-    } else {
-        if let Some(building_meta) = metadata.get_building(building_kind) {
-            if let Some(path) = &building_meta.source {
-                commands.spawn((
-                    SpriteBundle {
-                        texture: asset_server.load(path),
-                        transform: Transform::from_xyz(world_pos.x, world_pos.y, 1.0),
-                        sprite: Sprite {
-                            color: Color::srgba(1.0, 1.0, 1.0, 0.5),
-                            ..default()
-                        },
+    } else if let Some(building_meta) = metadata.get_building(building_kind) {
+        if let Some(path) = &building_meta.source {
+            commands.spawn((
+                SpriteBundle {
+                    texture: asset_server.load(path),
+                    transform: Transform::from_xyz(world_pos.x, world_pos.y, 1.0),
+                    sprite: Sprite {
+                        color: Color::srgba(1.0, 1.0, 1.0, 0.5),
                         ..default()
                     },
-                    Ghost,
-                ));
-            }
+                    ..default()
+                },
+                Ghost,
+            ));
         }
     }
 }
