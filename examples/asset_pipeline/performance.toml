@@ -1,0 +1,92 @@
+# Performance Asset Pipeline Configuration
+# Optimized for fast processing of large asset sets
+
+[sources]
+# Limited asset sources for faster processing
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack"
+]
+ai_provider = "none"  # Disable AI for speed
+
+[processing]
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0
+
+# Performance optimizations
+[processing.performance]
+# Use multiple CPU cores
+parallel_processing = true
+max_workers = 8  # Adjust based on your CPU
+# Use faster resampling
+resampling_filter = "bilinear"  # Faster than lanczos
+# Skip unnecessary processing steps
+skip_enhancement = true
+# Use memory-efficient processing
+stream_processing = true
+
+[quality]
+# Relaxed quality for speed
+max_alpha_threshold = 0.05
+edge_sharpness_threshold = 0.3
+
+# Fast validation only
+[quality.performance]
+# Skip expensive validation checks
+skip_detailed_validation = true
+# Use sampling for large assets
+validation_sampling = true
+# Quick dimension checks only
+fast_validation = true
+
+[output]
+# Fast compression
+format = "PNG"
+compression_level = 1  # Minimal compression for speed
+
+[paths]
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Minimal previews for speed
+generate_previews = false  # Skip previews entirely
+grid_size = [64, 64]
+show_labels = false
+show_grid = false
+
+# Performance-specific settings
+[performance]
+# Aggressive caching
+cache_everything = true
+cache_dir = "cache/pipeline"
+# Skip redundant operations
+skip_unchanged = true
+# Use temporary files efficiently
+temp_file_management = "memory"
+# Batch operations
+batch_size = 50
+
+# Memory management
+[performance.memory]
+# Limit memory usage
+max_memory_mb = 2048
+# Use memory pools
+memory_pooling = true
+# Garbage collection tuning
+gc_frequency = "low"
+
+# I/O optimizations
+[performance.io]
+# Use faster I/O operations
+async_io = true
+# Buffer sizes
+read_buffer_kb = 64
+write_buffer_kb = 64
+# Concurrent file operations
+max_concurrent_files = 10

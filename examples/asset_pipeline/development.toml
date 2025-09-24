@@ -1,0 +1,51 @@
+# Development Asset Pipeline Configuration
+# Optimized for development workflow with comprehensive validation and previews
+
+[sources]
+# Include some Kenney packs for quick content
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack"
+]
+ai_provider = "none"  # Disable AI for faster development cycles
+
+[processing]
+# Standard isometric settings
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 1  # Small padding for easier debugging
+
+[quality]
+# Moderate quality standards - catch major issues but allow iteration
+max_alpha_threshold = 0.02
+edge_sharpness_threshold = 0.4
+
+[output]
+# Balanced compression for development
+format = "PNG"
+compression_level = 4  # Faster compression
+
+[paths]
+# Standard paths
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Comprehensive previews for development
+generate_previews = true
+grid_size = [128, 128]  # Larger preview tiles
+show_labels = true
+show_grid = true
+
+# Development-specific settings
+[dev]
+# Enable hot-reload support (future feature)
+hot_reload = true
+# Generate debug information
+debug_output = true
+# Preserve intermediate files for debugging
+keep_temp_files = false

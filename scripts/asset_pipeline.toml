@@ -1,0 +1,43 @@
+# Asset Pipeline Configuration
+# This file configures the asset processing pipeline for Old Times RTS
+
+[sources]
+# Kenney asset packs to download and process
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack",
+    "nature-pack"
+]
+
+# AI provider configuration
+ai_provider = "none"  # Options: "none", "stable-diffusion", "replicate", "openai"
+
+[sources.ai_config]
+# AI provider specific configuration
+# stable_diffusion_url = "http://localhost:7860"
+# replicate_token = "your-token-here"
+# openai_api_key = "your-key-here"
+
+[processing]
+# Asset processing settings
+tile_size = [64, 32]        # Isometric tile dimensions
+unit_frame_size = [64, 64]  # Unit animation frame size
+atlas_padding = 0           # Padding between atlas frames
+
+[quality]
+# Quality validation settings
+max_alpha_threshold = 0.01      # Maximum alpha for "transparent" pixels
+edge_sharpness_threshold = 0.5  # Edge sharpness validation threshold
+
+[output]
+# Output format settings
+format = "PNG"          # Output image format
+compression_level = 6   # PNG compression level (0-9)
+
+[paths]
+# Directory paths (relative to project root)
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"

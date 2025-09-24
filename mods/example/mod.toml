@@ -1,0 +1,5 @@
+name = "Example Mod"
+version = "1.0.0"
+description = "An example mod showing how to add new buildings and recipes"
+author = "Old Times Team"
+priority = 100

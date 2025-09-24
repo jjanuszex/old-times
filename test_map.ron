@@ -1,0 +1,4166 @@
+(
+    width: 32,
+    height: 32,
+    tiles: [
+        [
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 134,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 118,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 117,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 170,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 195,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 212,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 212,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 192,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 160,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Water,
+                elevation: 77,
+            ),
+            (
+                tile_type: Water,
+                elevation: 85,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 120,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 79,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+            (
+                tile_type: Water,
+                elevation: 40,
+            ),
+            (
+                tile_type: Water,
+                elevation: 61,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 119,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 188,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 195,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 184,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 158,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 124,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 93,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 57,
+            ),
+            (
+                tile_type: Water,
+                elevation: 52,
+            ),
+            (
+                tile_type: Water,
+                elevation: 58,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 87,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 41,
+            ),
+            (
+                tile_type: Water,
+                elevation: 39,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 160,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 70,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 91,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 131,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 155,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 159,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 154,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 60,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+            (
+                tile_type: Water,
+                elevation: 35,
+            ),
+            (
+                tile_type: Water,
+                elevation: 39,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 59,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+            (
+                tile_type: Water,
+                elevation: 39,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 166,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 193,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 60,
+            ),
+            (
+                tile_type: Water,
+                elevation: 87,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 111,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 118,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 62,
+            ),
+            (
+                tile_type: Water,
+                elevation: 46,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 40,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 168,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 198,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 214,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 71,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 100,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 143,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 135,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 97,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 28,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 59,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 39,
+            ),
+            (
+                tile_type: Water,
+                elevation: 35,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 61,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 168,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 199,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 215,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 216,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 97,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 154,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 167,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 163,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 144,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 120,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Water,
+                elevation: 81,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 15,
+            ),
+            (
+                tile_type: Water,
+                elevation: 17,
+            ),
+            (
+                tile_type: Water,
+                elevation: 32,
+            ),
+            (
+                tile_type: Water,
+                elevation: 53,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Water,
+                elevation: 87,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 58,
+            ),
+            (
+                tile_type: Water,
+                elevation: 52,
+            ),
+            (
+                tile_type: Water,
+                elevation: 57,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 166,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 198,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 215,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 213,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 199,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 157,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 183,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 194,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 184,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 160,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 131,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Water,
+                elevation: 54,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 18,
+            ),
+            (
+                tile_type: Water,
+                elevation: 26,
+            ),
+            (
+                tile_type: Water,
+                elevation: 50,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 120,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 85,
+            ),
+            (
+                tile_type: Water,
+                elevation: 77,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 160,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 193,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 214,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 216,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 199,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 175,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 207,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 181,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 152,
+            ),
+        ],
+        [
+            (
+                tile_type: Forest,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 171,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 200,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 225,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 235,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 226,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 201,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 171,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 93,
+            ),
+            (
+                tile_type: Water,
+                elevation: 69,
+            ),
+            (
+                tile_type: Water,
+                elevation: 60,
+            ),
+            (
+                tile_type: Water,
+                elevation: 72,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 98,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 171,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 177,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 168,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 149,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 131,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 122,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 128,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 170,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 195,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 212,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 212,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 192,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 160,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+        ],
+        [
+            (
+                tile_type: Forest,
+                elevation: 153,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 174,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 199,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 223,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 234,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 227,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 205,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 178,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 130,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 105,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Water,
+                elevation: 87,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 104,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 161,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 197,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 199,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 188,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 167,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 135,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 138,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 188,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 195,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 184,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 158,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 124,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 93,
+            ),
+        ],
+        [
+            (
+                tile_type: Forest,
+                elevation: 145,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 157,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 177,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 198,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 210,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 208,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 192,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 168,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 105,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 99,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 111,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 168,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 194,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 215,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 212,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 198,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 176,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 154,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 140,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 137,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 155,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 159,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 154,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 60,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 130,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 141,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 158,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 176,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 167,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 149,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 106,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 96,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 103,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 161,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 194,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 213,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 216,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 208,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 192,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 118,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 62,
+            ),
+            (
+                tile_type: Water,
+                elevation: 46,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 105,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 118,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 134,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 144,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 143,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 130,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 90,
+            ),
+            (
+                tile_type: Water,
+                elevation: 85,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 171,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 201,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 213,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 207,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 197,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 185,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 158,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 144,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 131,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 119,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 97,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 28,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 93,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 125,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 130,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 121,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 80,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 98,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 167,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 191,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 195,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 181,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 165,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 152,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 141,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 130,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 117,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Water,
+                elevation: 81,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 15,
+            ),
+            (
+                tile_type: Water,
+                elevation: 17,
+            ),
+            (
+                tile_type: Water,
+                elevation: 32,
+            ),
+            (
+                tile_type: Water,
+                elevation: 53,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 91,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 134,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Water,
+                elevation: 85,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 156,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 170,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 152,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 132,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 130,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 138,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Water,
+                elevation: 54,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 18,
+            ),
+            (
+                tile_type: Water,
+                elevation: 26,
+            ),
+            (
+                tile_type: Water,
+                elevation: 50,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 101,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+        ],
+        [
+            (
+                tile_type: Forest,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 149,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 165,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 173,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 166,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 117,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 118,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 134,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Water,
+                elevation: 81,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 98,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 156,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 173,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 171,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 97,
+            ),
+            (
+                tile_type: Water,
+                elevation: 70,
+            ),
+            (
+                tile_type: Water,
+                elevation: 59,
+            ),
+            (
+                tile_type: Water,
+                elevation: 68,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 93,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+        ],
+        [
+            (
+                tile_type: Forest,
+                elevation: 181,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 165,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 158,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 159,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 167,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 175,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 177,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 169,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 119,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 57,
+            ),
+            (
+                tile_type: Water,
+                elevation: 85,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 169,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 197,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 199,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 156,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 124,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 94,
+            ),
+            (
+                tile_type: Water,
+                elevation: 77,
+            ),
+            (
+                tile_type: Water,
+                elevation: 81,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 129,
+            ),
+        ],
+        [
+            (
+                tile_type: Forest,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 197,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 189,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 182,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 176,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 170,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 163,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 155,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 131,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 91,
+            ),
+            (
+                tile_type: Water,
+                elevation: 70,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 30,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 217,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 224,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 146,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 97,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 216,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 208,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 192,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 133,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 111,
+            ),
+            (
+                tile_type: Water,
+                elevation: 87,
+            ),
+            (
+                tile_type: Water,
+                elevation: 60,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 20,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 68,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 186,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 225,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 234,
+            ),
+            (
+                tile_type: Stone,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 191,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 112,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 72,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 104,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 214,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 209,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 188,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 158,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 135,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 143,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 100,
+            ),
+            (
+                tile_type: Water,
+                elevation: 71,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 30,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 181,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 217,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 224,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 142,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 100,
+            ),
+            (
+                tile_type: Water,
+                elevation: 68,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 65,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 196,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 194,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 173,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 141,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 120,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 144,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 163,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 167,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 154,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 97,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 57,
+            ),
+            (
+                tile_type: Water,
+                elevation: 85,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 169,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 197,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 199,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 155,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 119,
+            ),
+            (
+                tile_type: Water,
+                elevation: 79,
+            ),
+            (
+                tile_type: Water,
+                elevation: 51,
+            ),
+            (
+                tile_type: Water,
+                elevation: 43,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 77,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 170,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 173,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 157,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 130,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 89,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 131,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 160,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 184,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 194,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 183,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 157,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Water,
+                elevation: 81,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 98,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 156,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 173,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 171,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 93,
+            ),
+            (
+                tile_type: Water,
+                elevation: 59,
+            ),
+            (
+                tile_type: Water,
+                elevation: 39,
+            ),
+            (
+                tile_type: Water,
+                elevation: 40,
+            ),
+            (
+                tile_type: Water,
+                elevation: 58,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 147,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 153,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 207,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 181,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 124,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 117,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 116,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 147,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 171,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 200,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 225,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 236,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 228,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 204,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 176,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 121,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 122,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 135,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 134,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 123,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+            (
+                tile_type: Water,
+                elevation: 53,
+            ),
+            (
+                tile_type: Water,
+                elevation: 36,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 58,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 92,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 89,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 113,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 117,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 124,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 137,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 153,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 173,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 199,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 225,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 239,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 237,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 222,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 201,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 181,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 165,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 144,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 113,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 95,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 50,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 23,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 71,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 116,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 155,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 57,
+            ),
+            (
+                tile_type: Water,
+                elevation: 69,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 96,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 110,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 135,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 145,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 157,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 176,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 198,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 226,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 225,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 207,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 197,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 186,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 98,
+            ),
+            (
+                tile_type: Water,
+                elevation: 71,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 25,
+            ),
+            (
+                tile_type: Water,
+                elevation: 9,
+            ),
+            (
+                tile_type: Water,
+                elevation: 11,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 180,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 38,
+            ),
+            (
+                tile_type: Water,
+                elevation: 46,
+            ),
+            (
+                tile_type: Water,
+                elevation: 62,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 102,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 118,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 127,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 192,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 208,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 216,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 212,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 199,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 135,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 96,
+            ),
+            (
+                tile_type: Water,
+                elevation: 62,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 15,
+            ),
+            (
+                tile_type: Water,
+                elevation: 1,
+            ),
+            (
+                tile_type: Water,
+                elevation: 6,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 88,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 144,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 190,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 39,
+            ),
+            (
+                tile_type: Water,
+                elevation: 42,
+            ),
+            (
+                tile_type: Water,
+                elevation: 56,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 100,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 114,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 117,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 109,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 99,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 95,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 100,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 117,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 144,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 172,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 194,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 207,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 223,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 216,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 192,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 154,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 110,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 47,
+            ),
+            (
+                tile_type: Water,
+                elevation: 25,
+            ),
+            (
+                tile_type: Water,
+                elevation: 9,
+            ),
+            (
+                tile_type: Water,
+                elevation: 11,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 136,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 180,
+            ),
+        ],
+        [
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 57,
+            ),
+            (
+                tile_type: Water,
+                elevation: 55,
+            ),
+            (
+                tile_type: Water,
+                elevation: 66,
+            ),
+            (
+                tile_type: Water,
+                elevation: 87,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 107,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 119,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 116,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 101,
+            ),
+            (
+                tile_type: Water,
+                elevation: 82,
+            ),
+            (
+                tile_type: Water,
+                elevation: 66,
+            ),
+            (
+                tile_type: Water,
+                elevation: 59,
+            ),
+            (
+                tile_type: Water,
+                elevation: 70,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 96,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 130,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 161,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 181,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 200,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 216,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 221,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 208,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 176,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 135,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 99,
+            ),
+            (
+                tile_type: Water,
+                elevation: 73,
+            ),
+            (
+                tile_type: Water,
+                elevation: 50,
+            ),
+            (
+                tile_type: Water,
+                elevation: 29,
+            ),
+            (
+                tile_type: Water,
+                elevation: 23,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 71,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 116,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 155,
+            ),
+        ],
+        [
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 83,
+            ),
+            (
+                tile_type: Water,
+                elevation: 77,
+            ),
+            (
+                tile_type: Water,
+                elevation: 86,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 105,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 123,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 132,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 107,
+            ),
+            (
+                tile_type: Water,
+                elevation: 84,
+            ),
+            (
+                tile_type: Water,
+                elevation: 59,
+            ),
+            (
+                tile_type: Water,
+                elevation: 42,
+            ),
+            (
+                tile_type: Water,
+                elevation: 42,
+            ),
+            (
+                tile_type: Water,
+                elevation: 62,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 94,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 127,
+            ),
+            (
+                tile_type: Forest,
+                elevation: 152,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 175,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 200,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 217,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 216,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 195,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 161,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 128,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 102,
+            ),
+            (
+                tile_type: Water,
+                elevation: 78,
+            ),
+            (
+                tile_type: Water,
+                elevation: 53,
+            ),
+            (
+                tile_type: Water,
+                elevation: 36,
+            ),
+            (
+                tile_type: Water,
+                elevation: 37,
+            ),
+            (
+                tile_type: Water,
+                elevation: 58,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 92,
+            ),
+            (
+                tile_type: Grass,
+                elevation: 126,
+            ),
+        ],
+    ],
+)

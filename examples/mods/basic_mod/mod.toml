@@ -1,0 +1,33 @@
+# Basic Mod Example
+# Minimal mod configuration showing essential settings
+
+[mod]
+name = "Basic Example Mod"
+version = "1.0.0"
+author = "Mod Developer"
+description = "A basic example mod demonstrating the minimal configuration needed"
+license = "MIT"
+
+[dependencies]
+game_version = ">=1.0.0"
+
+[assets]
+# Asset counts (automatically updated by pipeline)
+sprites_count = 0
+atlases_count = 0
+
+# Asset categories this mod provides
+buildings = []
+units = []
+terrain = []
+
+[build]
+# Build configuration
+pipeline_version = "1.0.0"
+last_build = ""  # Automatically updated
+
+[metadata]
+# Additional metadata
+tags = ["example", "basic", "template"]
+category = "example"
+homepage = "https://github.com/example/basic-mod"

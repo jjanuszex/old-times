@@ -1,0 +1,144 @@
+# Animation Specification Template
+# Defines animation properties for units and effects
+
+[metadata]
+name = "Animation Specifications"
+version = "1.0.0"
+description = "Animation definitions for Old Times units"
+
+# Basic walking animation (standard for all units)
+[animations.walk]
+description = "Standard 8-direction walking animation"
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+frames_per_direction = 8
+total_frames = 64
+fps = 10
+loop = true
+
+# Frame timing for walking cycle
+[animations.walk.timing]
+frame_0 = "contact_left"      # Left foot touches ground
+frame_1 = "recoil_left"       # Left foot lifts, body recoils
+frame_2 = "passing_left"      # Left leg passes right leg
+frame_3 = "high_point_left"   # Left foot at highest point
+frame_4 = "contact_right"     # Right foot touches ground
+frame_5 = "recoil_right"      # Right foot lifts, body recoils
+frame_6 = "passing_right"     # Right leg passes left leg
+frame_7 = "high_point_right"  # Right foot at highest point
+
+# Idle animation (optional)
+[animations.idle]
+description = "Idle standing animation"
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+frames_per_direction = 4
+total_frames = 32
+fps = 4
+loop = true
+
+# Attack animation (for combat units)
+[animations.attack]
+description = "Attack animation"
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+frames_per_direction = 6
+total_frames = 48
+fps = 12
+loop = false
+
+# Death animation (optional)
+[animations.death]
+description = "Death animation"
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+frames_per_direction = 8
+total_frames = 64
+fps = 8
+loop = false
+
+# Special animations for specific units
+[animations.wizard_cast]
+description = "Wizard spell casting animation"
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+frames_per_direction = 12
+total_frames = 96
+fps = 8
+loop = false
+effects = ["sparkles", "glow", "magic_circle"]
+
+[animations.dragon_fly]
+description = "Dragon flying animation"
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+frames_per_direction = 16
+total_frames = 128
+fps = 12
+loop = true
+effects = ["wing_flap", "shadow"]
+
+# Building animations (optional)
+[animations.windmill_rotate]
+description = "Windmill blade rotation"
+type = "building_animation"
+frames = 8
+fps = 6
+loop = true
+anchor_point = [32, 16]  # Rotation center
+
+[animations.forge_fire]
+description = "Forge fire animation"
+type = "building_animation"
+frames = 6
+fps = 8
+loop = true
+effects = ["fire_particles", "smoke"]
+
+# Effect animations
+[animations.explosion]
+description = "Explosion effect"
+type = "effect"
+frames = 12
+fps = 15
+loop = false
+size = [96, 96]
+effects = ["particles", "screen_shake"]
+
+[animations.heal_sparkles]
+description = "Healing sparkles effect"
+type = "effect"
+frames = 16
+fps = 10
+loop = true
+size = [64, 64]
+effects = ["glow", "particles"]
+
+# Atlas layout specifications
+[atlas_layouts.standard_unit]
+description = "Standard unit atlas layout (8×8)"
+width = 512
+height = 512
+frame_width = 64
+frame_height = 64
+rows = 8  # Directions
+cols = 8  # Frames per direction
+padding = 0
+
+[atlas_layouts.large_unit]
+description = "Large unit atlas layout (8×16)"
+width = 1024
+height = 512
+frame_width = 128
+frame_height = 64
+rows = 8   # Directions
+cols = 16  # Frames per direction
+padding = 0
+
+# Animation state machine (advanced)
+[state_machine.unit_states]
+idle = { animation = "idle", transitions = ["walk", "attack", "death"] }
+walk = { animation = "walk", transitions = ["idle", "attack", "death"] }
+attack = { animation = "attack", transitions = ["idle", "walk", "death"] }
+death = { animation = "death", transitions = [] }
+
+# Transition conditions
+[state_machine.transitions]
+idle_to_walk = { condition = "movement_started" }
+walk_to_idle = { condition = "movement_stopped" }
+any_to_attack = { condition = "attack_command" }
+any_to_death = { condition = "health_zero" }

@@ -1,0 +1,62 @@
+[harvest_wood]
+name = "Harvest Wood"
+production_time = 10.0
+required_building = "lumberjack"
+
+[harvest_wood.inputs]
+
+[harvest_wood.outputs]
+wood = 2
+
+[make_planks]
+name = "Make Planks"
+production_time = 8.0
+required_building = "sawmill"
+
+[make_planks.inputs]
+wood = 1
+
+[make_planks.outputs]
+planks = 2
+
+[grow_grain]
+name = "Grow Grain"
+production_time = 20.0
+required_building = "farm"
+
+[grow_grain.inputs]
+
+[grow_grain.outputs]
+grain = 3
+
+[mill_flour]
+name = "Mill Flour"
+production_time = 6.0
+required_building = "mill"
+
+[mill_flour.inputs]
+grain = 2
+
+[mill_flour.outputs]
+flour = 1
+
+[bake_bread]
+name = "Bake Bread"
+production_time = 12.0
+required_building = "bakery"
+
+[bake_bread.inputs]
+flour = 1
+
+[bake_bread.outputs]
+bread = 2
+
+[mine_stone]
+name = "Mine Stone"
+production_time = 15.0
+required_building = "quarry"
+
+[mine_stone.inputs]
+
+[mine_stone.outputs]
+stone = 1

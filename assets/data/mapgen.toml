@@ -1,0 +1,6 @@
+width = 64
+height = 64
+forest_density = 0.3
+stone_density = 0.1
+water_patches = 3
+seed = 12345

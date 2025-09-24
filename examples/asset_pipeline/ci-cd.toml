@@ -1,0 +1,105 @@
+# CI/CD Asset Pipeline Configuration
+# Optimized for continuous integration and automated builds
+
+[sources]
+# Reproducible asset sources only
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack",
+    "nature-pack"
+]
+ai_provider = "none"  # Disable AI for reproducible builds
+
+[processing]
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0
+
+# CI/CD specific processing
+[processing.ci]
+# Deterministic processing
+deterministic = true
+# No interactive prompts
+non_interactive = true
+# Fail fast on errors
+fail_fast = true
+# Reproducible results
+seed = 12345
+
+[quality]
+# Strict but not excessive for CI
+max_alpha_threshold = 0.01
+edge_sharpness_threshold = 0.5
+
+# CI-appropriate validation
+[quality.ci]
+# Comprehensive but fast validation
+quick_comprehensive = true
+# Generate validation reports
+generate_reports = true
+# Exit codes for different error levels
+error_exit_codes = true
+
+[output]
+format = "PNG"
+compression_level = 6
+
+[paths]
+# CI-friendly paths
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Skip previews in CI unless specifically requested
+generate_previews = false
+grid_size = [96, 96]
+show_labels = false
+show_grid = false
+
+# CI/CD specific settings
+[ci]
+# Logging configuration
+log_level = "INFO"
+log_format = "json"  # Machine-readable logs
+log_file = "pipeline.log"
+
+# Artifact management
+[ci.artifacts]
+# Generate build artifacts
+create_artifacts = true
+artifact_dir = "build_artifacts"
+# Include metadata in artifacts
+include_metadata = true
+# Generate checksums
+generate_checksums = true
+
+# Build information
+[ci.build]
+# Include build metadata
+include_build_info = true
+# Version information
+version_from_git = true
+# Build timestamp
+include_timestamp = true
+
+# Error handling for CI
+[ci.error_handling]
+# Continue on non-critical errors
+continue_on_warning = true
+# Detailed error reporting
+detailed_errors = true
+# Error categorization
+categorize_errors = true
+
+# Performance for CI environments
+[ci.performance]
+# Use available CPU cores
+auto_detect_cores = true
+# Memory limits for CI
+max_memory_mb = 1024
+# Timeout settings
+operation_timeout = 300

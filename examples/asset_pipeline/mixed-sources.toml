@@ -1,0 +1,91 @@
+# Mixed Sources Asset Pipeline Configuration
+# Combines multiple asset sources for comprehensive content
+
+[sources]
+# Use Kenney packs for base content
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack",
+    "nature-pack"
+]
+# Use AI for custom/missing assets
+ai_provider = "stable-diffusion"
+
+[sources.ai_config]
+stable_diffusion_url = "http://localhost:7860"
+# Only generate assets not available from Kenney
+generate_missing_only = true
+prompt_templates = {
+    tile = "isometric {name} terrain tile, medieval fantasy style, 2:1 aspect ratio, transparent background",
+    building = "isometric {name} building, medieval fantasy architecture, detailed, transparent background",
+    unit = "isometric {name} character, medieval fantasy, 8-direction walking animation, transparent background"
+}
+steps = 30
+cfg_scale = 7.0
+
+# Local asset sources
+[sources.local]
+# Scan these directories for manual assets
+source_dirs = [
+    "source_assets/manual",
+    "source_assets/custom",
+    "source_assets/community"
+]
+# File naming conventions
+naming_convention = "{type}_{name}.{ext}"
+
+[processing]
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0
+
+# Source-specific processing
+[processing.source_specific]
+# Kenney assets: minimal processing needed
+kenney = {
+    auto_crop = true,
+    enhance_contrast = 1.05
+}
+# AI assets: more aggressive processing
+ai = {
+    remove_background = true,
+    enhance_edges = true,
+    color_correction = true,
+    denoise = true
+}
+# Manual assets: preserve original quality
+manual = {
+    preserve_quality = true,
+    minimal_processing = true
+}
+
+[quality]
+# Balanced quality standards
+max_alpha_threshold = 0.02
+edge_sharpness_threshold = 0.5
+
+# Source-specific quality standards
+[quality.source_specific]
+kenney = { max_alpha_threshold = 0.01 }      # Kenney assets are high quality
+ai = { max_alpha_threshold = 0.05 }          # AI assets may have artifacts
+manual = { max_alpha_threshold = 0.001 }     # Manual assets should be perfect
+
+[output]
+format = "PNG"
+compression_level = 6
+
+[paths]
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+generate_previews = true
+grid_size = [96, 96]
+show_labels = true
+show_grid = true
+# Group previews by source
+group_by_source = true

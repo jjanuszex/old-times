@@ -1,0 +1,81 @@
+# Mod Development Asset Pipeline Configuration
+# Optimized for creating and testing game mods
+
+[sources]
+# Minimal base assets - focus on mod-specific content
+kenney_packs = ["medieval-rts-pack"]
+ai_provider = "stable-diffusion"
+
+[sources.ai_config]
+stable_diffusion_url = "http://localhost:7860"
+# Mod-specific prompt templates
+prompt_templates = {
+    tile = "isometric {name} tile for fantasy RTS mod, unique style, 2:1 aspect ratio, transparent background",
+    building = "isometric {name} building for fantasy RTS mod, distinctive architecture, transparent background",
+    unit = "isometric {name} character for fantasy RTS mod, unique design, 8-direction sprite, transparent background"
+}
+steps = 40
+cfg_scale = 7.0
+
+[processing]
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 1  # Padding helps with mod asset debugging
+
+[quality]
+# Moderate standards for rapid mod iteration
+max_alpha_threshold = 0.03
+edge_sharpness_threshold = 0.4
+
+[output]
+format = "PNG"
+compression_level = 4  # Faster compression for development
+
+[paths]
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Comprehensive previews for mod development
+generate_previews = true
+grid_size = [128, 128]  # Larger previews for detailed inspection
+show_labels = true
+show_grid = true
+
+# Mod-specific settings
+[mod]
+# Default mod template settings
+default_author = "Mod Developer"
+default_version = "1.0.0"
+default_game_version = ">=1.0.0"
+
+# Mod validation settings
+[mod.validation]
+# Ensure mod assets don't conflict with base game
+check_conflicts = true
+# Validate mod metadata
+validate_manifest = true
+# Check asset isolation
+validate_isolation = true
+
+# Mod development workflow
+[mod.workflow]
+# Auto-generate mod structure
+auto_create_structure = true
+# Generate example configurations
+include_examples = true
+# Create development documentation
+generate_docs = true
+
+# Development helpers
+[dev]
+# Enable detailed logging for mod development
+verbose_logging = true
+# Keep intermediate files for debugging
+keep_temp_files = true
+# Generate debug information
+debug_output = true

@@ -1,0 +1,63 @@
+[lumberjack]
+name = "Lumberjack"
+construction_time = 30.0
+worker_capacity = 2
+stockpile_capacity = 20
+size = [2, 2]
+
+[lumberjack.construction_cost]
+stone = 5
+
+[sawmill]
+name = "Sawmill"
+construction_time = 45.0
+worker_capacity = 3
+stockpile_capacity = 30
+size = [3, 3]
+
+[sawmill.construction_cost]
+stone = 8
+wood = 10
+
+[farm]
+name = "Farm"
+construction_time = 40.0
+worker_capacity = 2
+stockpile_capacity = 25
+size = [4, 4]
+
+[farm.construction_cost]
+stone = 6
+wood = 8
+
+[mill]
+name = "Mill"
+construction_time = 50.0
+worker_capacity = 2
+stockpile_capacity = 20
+size = [3, 3]
+
+[mill.construction_cost]
+stone = 12
+wood = 15
+
+[bakery]
+name = "Bakery"
+construction_time = 35.0
+worker_capacity = 3
+stockpile_capacity = 15
+size = [2, 3]
+
+[bakery.construction_cost]
+stone = 8
+wood = 6
+
+[quarry]
+name = "Quarry"
+construction_time = 60.0
+worker_capacity = 4
+stockpile_capacity = 40
+size = [3, 3]
+
+[quarry.construction_cost]
+wood = 20

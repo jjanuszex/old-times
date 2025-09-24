@@ -1,0 +1,18 @@
+[package]
+name = "oldtimes-client"
+version = "0.1.0"
+edition = "2021"
+description = "Client with rendering and UI for Old Times"
+license = "MIT"
+
+[[bin]]
+name = "oldtimes-client"
+path = "src/main.rs"
+
+[dependencies]
+oldtimes-core = { path = "../oldtimes-core" }
+bevy = { workspace = true }
+serde = { workspace = true }
+anyhow = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }

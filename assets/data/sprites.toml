@@ -1,0 +1,72 @@
+# Sprite metadata for Old Times RTS
+# This file defines sprite assets and their properties
+
+[tiles.grass]
+kind = "tile"
+size = [32, 32]
+source = "sprites/grass.png"
+
+[tiles.water]
+kind = "tile"
+size = [32, 32]
+source = "sprites/water.png"
+
+[tiles.stone]
+kind = "tile"
+size = [32, 32]
+source = "sprites/stone.png"
+
+[tiles.forest]
+kind = "tile"
+size = [32, 32]
+source = "sprites/forest.png"
+
+[tiles.road]
+kind = "tile"
+size = [32, 32]
+source = "sprites/road.png"
+
+[buildings.lumberjack]
+kind = "building"
+size = [64, 64]
+source = "sprites/lumberjack.png"
+tile_footprint = [2, 2]
+
+[buildings.sawmill]
+kind = "building"
+size = [96, 96]
+source = "sprites/sawmill.png"
+tile_footprint = [3, 3]
+
+[buildings.farm]
+kind = "building"
+size = [128, 128]
+source = "sprites/farm.png"
+tile_footprint = [4, 4]
+
+[buildings.mill]
+kind = "building"
+size = [96, 96]
+source = "sprites/mill.png"
+tile_footprint = [3, 3]
+
+[buildings.bakery]
+kind = "building"
+size = [64, 96]
+source = "sprites/bakery.png"
+tile_footprint = [2, 3]
+
+[buildings.quarry]
+kind = "building"
+size = [96, 96]
+source = "sprites/quarry.png"
+tile_footprint = [3, 3]
+
+[units.worker]
+kind = "unit"
+source = "sprites/worker.png"
+frame_size = [32, 32]
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+anim_walk_fps = 10
+anim_walk_len = 8
+layout = "single_sprite"

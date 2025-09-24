@@ -1,0 +1,39 @@
+# Basic Asset Pipeline Configuration
+# Minimal setup for getting started with the asset pipeline
+
+[sources]
+# No external asset sources - use manual assets only
+kenney_packs = []
+ai_provider = "none"
+
+[processing]
+# Standard isometric settings
+tile_size = [64, 32]        # Isometric 2:1 tiles
+unit_frame_size = [64, 64]  # Square unit frames
+atlas_padding = 0           # No padding between frames
+
+[quality]
+# Relaxed quality standards for development
+max_alpha_threshold = 0.05      # Allow some semi-transparent pixels
+edge_sharpness_threshold = 0.3  # Relaxed edge requirements
+
+[output]
+# Standard PNG output
+format = "PNG"
+compression_level = 6
+
+[paths]
+# Default directory structure
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Enable basic previews
+generate_previews = true
+grid_size = [96, 96]
+show_labels = true
+show_grid = true

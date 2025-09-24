@@ -1,0 +1,85 @@
+# AI Generation Asset Pipeline Configuration
+# Configured for AI-powered asset generation
+
+[sources]
+# Minimal Kenney packs as fallback
+kenney_packs = ["isometric-city-pack"]
+# Primary source is AI generation
+ai_provider = "stable-diffusion"
+
+[sources.ai_config]
+# Stable Diffusion configuration
+stable_diffusion_url = "http://localhost:7860"
+model = "stable-diffusion-xl"
+# Prompt templates for different asset types
+prompt_templates = {
+    tile = "isometric {name} tile for medieval RTS game, 2:1 aspect ratio, transparent background, pixel art style",
+    building = "isometric {name} building for medieval RTS game, 2:1 aspect ratio, transparent background, detailed architecture",
+    unit = "isometric {name} character for medieval RTS game, 64x64 pixels, transparent background, 8-direction sprite"
+}
+# Generation parameters
+steps = 50
+cfg_scale = 7.5
+seed = -1  # Random seed
+batch_size = 1
+
+# Alternative AI providers (uncomment to use)
+# [sources.ai_config.replicate]
+# token = "your-replicate-token"
+# model = "stability-ai/stable-diffusion"
+
+# [sources.ai_config.openai]
+# api_key = "your-openai-key"
+# model = "dall-e-3"
+# quality = "hd"
+# style = "natural"
+
+[processing]
+# Standard settings
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0
+
+# AI-specific processing
+[processing.ai_specific]
+# AI images often need background removal
+remove_background = true
+# Enhance edges after AI generation
+enhance_edges = true
+# Color correction for consistency
+color_correction = true
+# Noise reduction for AI artifacts
+denoise = true
+
+[quality]
+# Relaxed standards for AI-generated content
+max_alpha_threshold = 0.05      # AI may have semi-transparent edges
+edge_sharpness_threshold = 0.3  # AI edges may be softer
+
+[output]
+format = "PNG"
+compression_level = 6
+
+[paths]
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Important for AI-generated assets to verify quality
+generate_previews = true
+grid_size = [128, 128]  # Larger previews for detailed inspection
+show_labels = true
+show_grid = true
+
+# AI-specific settings
+[ai]
+# Retry failed generations
+max_retries = 3
+# Timeout for generation requests
+generation_timeout = 300
+# Save intermediate results for debugging
+save_intermediates = true

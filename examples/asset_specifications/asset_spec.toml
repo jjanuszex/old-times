@@ -1,0 +1,96 @@
+# Asset Specification Template
+# Use this template to define custom assets for the pipeline
+
+[metadata]
+name = "Custom Asset Pack"
+version = "1.0.0"
+author = "Asset Creator"
+description = "Custom assets for Old Times RTS"
+
+# Tile specifications
+[tiles.custom_grass]
+name = "custom_grass"
+type = "tile"
+source = "source_assets/terrain/custom_grass.png"
+size = [64, 32]
+description = "Custom grass tile with flowers"
+
+[tiles.magical_water]
+name = "magical_water"
+type = "tile"
+source = "source_assets/terrain/magical_water.png"
+size = [64, 32]
+description = "Magical water with glowing effects"
+effects = ["glow", "animation"]
+
+# Building specifications
+[buildings.wizard_tower]
+name = "wizard_tower"
+type = "building"
+source = "source_assets/buildings/wizard_tower.png"
+size = [64, 128]  # 1×3 tiles
+tile_footprint = [1, 3]
+description = "Tall wizard tower with magical elements"
+category = "magical"
+
+[buildings.dragon_lair]
+name = "dragon_lair"
+type = "building"
+source = "source_assets/buildings/dragon_lair.png"
+size = [128, 96]  # 2×2 tiles
+tile_footprint = [2, 2]
+description = "Large dragon lair with treasure"
+category = "special"
+
+# Unit specifications
+[units.wizard]
+name = "wizard"
+type = "unit"
+source = "source_assets/units/wizard/"
+frame_size = [64, 64]
+animation_frames = 64  # 8 directions × 8 frames
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+description = "Magical wizard unit with spell casting"
+category = "magical"
+
+# Animation specifications
+[animations.wizard_walk]
+unit = "wizard"
+type = "walk"
+frames = 8
+fps = 10
+loop = true
+
+[animations.wizard_cast]
+unit = "wizard"
+type = "cast"
+frames = 12
+fps = 8
+loop = false
+effects = ["sparkles", "glow"]
+
+# Processing specifications
+[processing]
+# Custom processing settings for this asset pack
+tile_enhancement = true
+building_shadow_enhancement = true
+unit_edge_sharpening = true
+
+# Quality specifications
+[quality]
+# Custom quality requirements
+strict_dimensions = true
+require_transparency = true
+validate_isometric = true
+custom_validation = [
+    "magical_glow_validation",
+    "animation_consistency_check"
+]
+
+# Output specifications
+[output]
+# Custom output settings
+generate_previews = true
+create_atlases = true
+include_metadata = true
+export_formats = ["PNG", "sprites.toml"]

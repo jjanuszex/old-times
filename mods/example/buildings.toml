@@ -1,0 +1,11 @@
+[workshop]
+name = "Workshop"
+construction_time = 60.0
+worker_capacity = 4
+stockpile_capacity = 25
+size = [3, 3]
+
+[workshop.construction_cost]
+stone = 15
+wood = 20
+planks = 10

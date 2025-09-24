@@ -1,0 +1,21 @@
+# Mod configuration for {{ mod_name }}
+# Generated at: {{ generation_timestamp }}
+
+[mod]
+name = "{{ mod_name | safe_name }}"
+version = "1.0.0"
+description = "Generated mod with {{ asset_count }} assets"
+author = "Asset Pipeline"
+
+[assets]
+{% set asset_types = {} %}
+{% for asset in assets %}
+{% set _ = asset_types.update({asset.asset_type: asset_types.get(asset.asset_type, []) + [asset.name | safe_name]}) %}
+{% endfor %}
+{% for asset_type, names in asset_types.items() %}
+{{ asset_type }}s = [{% for name in names %}"{{ name }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+{% endfor %}
+
+[dependencies]
+# List any mod dependencies here
+base_game = ">=1.0.0"

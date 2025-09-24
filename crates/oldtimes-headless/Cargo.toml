@@ -1,0 +1,20 @@
+[package]
+name = "oldtimes-headless"
+version = "0.1.0"
+edition = "2021"
+description = "Headless server and testing binary for Old Times"
+license = "MIT"
+
+[[bin]]
+name = "oldtimes-headless"
+path = "src/main.rs"
+
+[dependencies]
+oldtimes-core = { path = "../oldtimes-core" }
+bevy = { workspace = true }
+serde = { workspace = true }
+ron = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }

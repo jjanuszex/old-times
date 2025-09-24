@@ -1,0 +1,119 @@
+# Advanced Mod Example
+# Comprehensive mod configuration with custom assets and animations
+
+[mod]
+name = "Advanced Fantasy Mod"
+version = "2.1.0"
+author = "Fantasy Mod Team"
+description = "A comprehensive fantasy mod adding new buildings, units, and terrain with custom animations"
+license = "CC-BY-SA-4.0"
+homepage = "https://github.com/fantasy-mod/advanced-mod"
+repository = "https://github.com/fantasy-mod/advanced-mod"
+
+[dependencies]
+game_version = ">=1.2.0"
+# Optional dependencies on other mods
+optional_mods = [
+    "base-fantasy-pack>=1.0.0"
+]
+
+[assets]
+# Asset inventory (automatically updated by pipeline)
+sprites_count = 45
+atlases_count = 8
+
+# Detailed asset categories
+buildings = [
+    "wizard_tower",
+    "dragon_lair",
+    "crystal_mine",
+    "enchanted_forge",
+    "magic_academy"
+]
+
+units = [
+    "wizard",
+    "dragon",
+    "crystal_golem",
+    "fire_elemental",
+    "apprentice"
+]
+
+terrain = [
+    "crystal_grass",
+    "lava_rock",
+    "enchanted_forest",
+    "magic_water",
+    "crystal_deposits"
+]
+
+# Custom asset categories
+[assets.custom]
+effects = [
+    "magic_sparkles",
+    "fire_particles",
+    "crystal_glow"
+]
+
+ui_elements = [
+    "fantasy_panel",
+    "magic_buttons",
+    "crystal_icons"
+]
+
+[build]
+pipeline_version = "1.0.0"
+last_build = "2024-01-15T10:30:00Z"
+build_number = 42
+
+# Advanced build configuration
+[build.config]
+# Custom processing settings for this mod
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 2  # Extra padding for magical effects
+
+# Quality settings specific to fantasy theme
+quality_profile = "fantasy"
+enable_glow_effects = true
+enhance_magical_elements = true
+
+[metadata]
+tags = ["fantasy", "magic", "advanced", "animations"]
+category = "total-conversion"
+difficulty = "advanced"
+estimated_playtime = "20+ hours"
+
+# Localization support
+[localization]
+supported_languages = ["en", "es", "fr", "de"]
+default_language = "en"
+
+# Mod-specific configuration
+[fantasy]
+# Fantasy-specific settings
+magic_intensity = "high"
+dragon_animations = true
+spell_effects = true
+crystal_reflections = true
+
+# Animation configuration
+[animations]
+# Custom animation settings
+wizard_spell_casting = {
+    frames = 12,
+    fps = 8,
+    loop = true
+}
+
+dragon_flying = {
+    frames = 16,
+    fps = 12,
+    loop = true
+}
+
+crystal_pulsing = {
+    frames = 8,
+    fps = 4,
+    loop = true
+}

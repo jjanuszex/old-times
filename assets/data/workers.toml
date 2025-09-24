@@ -1,0 +1,4 @@
+[worker]
+name = "Worker"
+movement_speed = 1.0
+carrying_capacity = 5

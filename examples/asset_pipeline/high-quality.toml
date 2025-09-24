@@ -1,0 +1,102 @@
+# High Quality Asset Pipeline Configuration
+# Strict quality standards for professional game development
+
+[sources]
+# Curated high-quality asset sources
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack",
+    "nature-pack"
+]
+ai_provider = "none"  # Disable AI for consistent quality
+
+# Manual asset sources only
+[sources.local]
+source_dirs = [
+    "source_assets/professional",
+    "source_assets/commissioned"
+]
+# Require specific naming and organization
+strict_naming = true
+require_metadata = true
+
+[processing]
+# Precise isometric requirements
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0
+
+# High-quality processing settings
+[processing.quality]
+# Preserve maximum detail
+preserve_detail = true
+# Use high-quality resampling
+resampling_filter = "lanczos"
+# Maintain color accuracy
+color_profile = "sRGB"
+# Preserve alpha channel precision
+alpha_precision = 16
+
+[quality]
+# Extremely strict quality standards
+max_alpha_threshold = 0.0001    # Nearly perfect transparency
+edge_sharpness_threshold = 0.9  # Very sharp edges required
+
+# Comprehensive quality checks
+[quality.checks]
+# Validate pixel-perfect dimensions
+strict_dimensions = true
+# Check for compression artifacts
+detect_artifacts = true
+# Validate color consistency
+color_consistency = true
+# Check for proper isometric projection
+isometric_validation = true
+# Validate transparency edges
+alpha_edge_validation = true
+
+[output]
+# Highest quality output
+format = "PNG"
+compression_level = 9
+# Preserve all metadata
+preserve_metadata = true
+
+[paths]
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# High-quality previews for inspection
+generate_previews = true
+grid_size = [192, 192]  # Large, detailed previews
+show_labels = true
+show_grid = true
+# Generate multiple preview types
+preview_types = ["grid", "alignment", "animation", "quality"]
+
+# Professional workflow settings
+[professional]
+# Generate asset reports
+generate_reports = true
+# Create asset documentation
+document_assets = true
+# Validate against style guide
+style_guide_validation = true
+# Generate asset statistics
+generate_statistics = true
+
+# Quality assurance
+[qa]
+# Multiple validation passes
+multi_pass_validation = true
+# Generate quality metrics
+quality_metrics = true
+# Create validation reports
+validation_reports = true
+# Automated quality scoring
+quality_scoring = true

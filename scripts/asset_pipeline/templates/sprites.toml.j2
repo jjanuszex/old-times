@@ -1,0 +1,49 @@
+# Generated sprites.toml
+# This file contains metadata for all game sprites
+# Generated at: {{ generation_timestamp }}
+# Total assets: {{ total_assets }}
+
+{% if tiles %}
+[tiles]
+{% for tile in tiles %}
+[tiles.{{ tile.name | safe_name }}]
+kind = "tile"
+size = [{{ tile.image.width }}, {{ tile.image.height }}]
+source = "{{ tile.output_path | format_path }}"
+
+{% endfor %}
+{% endif %}
+
+{% if buildings %}
+[buildings]
+{% for building in buildings %}
+[buildings.{{ building.name | safe_name }}]
+kind = "building"
+size = [{{ building.image.width }}, {{ building.image.height }}]
+source = "{{ building.output_path | format_path }}"
+tile_footprint = {{ building.image.width | tile_footprint(building.image.height) }}
+
+{% endfor %}
+{% endif %}
+
+{% if units %}
+[units]
+{% for unit in units %}
+[units.{{ unit.name | safe_name }}]
+kind = "unit"
+{% set atlas_name = unit.name + "_atlas" %}
+{% if atlas_name in atlases %}
+source = "atlases/{{ atlas_name }}.png"
+frame_size = [64, 64]
+directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+anim_walk_fps = 10
+anim_walk_len = 8
+layout = "dirs_rows"
+atlas_map = "atlases/{{ atlas_name }}.json"
+{% else %}
+source = "{{ unit.output_path | format_path }}"
+frame_size = [{{ unit.image.width }}, {{ unit.image.height }}]
+{% endif %}
+
+{% endfor %}
+{% endif %}

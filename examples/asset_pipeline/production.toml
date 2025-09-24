@@ -1,0 +1,55 @@
+# Production Asset Pipeline Configuration
+# Optimized for final game builds with strict quality and performance
+
+[sources]
+# Comprehensive asset sources for production
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack",
+    "nature-pack",
+    "fantasy-pack"
+]
+ai_provider = "none"  # Disable AI for reproducible builds
+
+[processing]
+# Strict isometric requirements
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0  # No padding for optimal texture usage
+
+[quality]
+# Strict quality standards for production
+max_alpha_threshold = 0.001     # Nearly perfect transparency
+edge_sharpness_threshold = 0.7  # Sharp, clean edges required
+
+[output]
+# High compression for smaller file sizes
+format = "PNG"
+compression_level = 9  # Maximum compression
+
+[paths]
+# Standard paths
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+# Minimal previews for production
+generate_previews = false  # Skip previews for faster builds
+grid_size = [64, 64]
+show_labels = false
+show_grid = false
+
+# Production-specific settings
+[production]
+# Optimize for file size and performance
+optimize_textures = true
+# Validate all assets strictly
+strict_validation = true
+# Generate checksums for asset integrity
+generate_checksums = true
+# Clean up temporary files
+cleanup_temp = true

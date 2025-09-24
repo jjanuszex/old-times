@@ -1,0 +1,63 @@
+# Kenney-Only Asset Pipeline Configuration
+# Uses only Kenney CC0 asset packs as the source
+
+[sources]
+# Comprehensive Kenney pack selection
+kenney_packs = [
+    "isometric-city-pack",
+    "medieval-rts-pack",
+    "nature-pack",
+    "fantasy-pack",
+    "castle-pack",
+    "village-pack",
+    "industrial-pack"
+]
+ai_provider = "none"
+
+# Kenney-specific configuration
+[sources.kenney_config]
+# Cache downloaded packs locally
+cache_packs = true
+cache_dir = "cache/kenney"
+# Prefer higher resolution versions when available
+prefer_hd = true
+# Download timeout in seconds
+download_timeout = 300
+
+[processing]
+# Optimized for Kenney asset characteristics
+tile_size = [64, 32]
+unit_frame_size = [64, 64]
+atlas_padding = 0
+
+# Kenney assets often need more aggressive normalization
+[processing.kenney_specific]
+# Auto-crop whitespace from Kenney assets
+auto_crop = true
+# Enhance contrast for better isometric appearance
+enhance_contrast = 1.1
+# Sharpen edges after resizing
+sharpen_edges = true
+
+[quality]
+# Moderate standards - Kenney assets are generally good quality
+max_alpha_threshold = 0.01
+edge_sharpness_threshold = 0.5
+
+[output]
+format = "PNG"
+compression_level = 6
+
+[paths]
+assets_dir = "assets"
+sprites_dir = "assets/sprites"
+atlases_dir = "assets/atlases"
+data_dir = "assets/data"
+mods_dir = "mods"
+preview_dir = "assets/preview"
+
+[preview]
+generate_previews = true
+grid_size = [96, 96]
+show_labels = true
+show_grid = true

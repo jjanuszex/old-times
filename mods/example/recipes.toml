@@ -1,0 +1,11 @@
+[craft_tools]
+name = "Craft Tools"
+production_time = 25.0
+required_building = "workshop"
+
+[craft_tools.inputs]
+planks = 3
+stone = 2
+
+[craft_tools.outputs]
+tools = 1
